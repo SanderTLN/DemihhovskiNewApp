@@ -10,7 +10,7 @@ namespace DemihhovskiNewApp
         {
             InitializeComponent();
 
-            MainPage = new StackPage();
+            MainPage = new Valgisfoor2();
         }
 
         protected override void OnStart()
