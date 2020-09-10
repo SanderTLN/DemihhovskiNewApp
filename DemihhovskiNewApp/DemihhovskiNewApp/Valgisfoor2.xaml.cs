@@ -24,7 +24,7 @@ namespace DemihhovskiNewApp
                 Text="Punane",
                 HorizontalOptions = LayoutOptions.Center,
                 TextColor = Color.Black,
-                FontSize = 15,
+                FontSize = 13,
                 FontAttributes = FontAttributes.Bold
             };
             pun = new Frame()
@@ -40,7 +40,7 @@ namespace DemihhovskiNewApp
                 Text = "Kollane",
                 HorizontalOptions = LayoutOptions.Center,
                 TextColor = Color.Black,
-                FontSize = 15,
+                FontSize = 13,
                 FontAttributes = FontAttributes.Bold
             };
             kol = new Frame()
@@ -108,6 +108,9 @@ namespace DemihhovskiNewApp
             if (fr == pun & sisse_valja == false) { punane.Text = "Stopp"; }
             else if (fr == kol & sisse_valja == false) { kollane.Text = "Oota"; }
             else if (fr == roh & sisse_valja == false) { roheline.Text = "Mine"; }
+            else if (fr == pun & sisse_valja == true) { punane.Text = "Sisse valgusfoor"; }
+            else if (fr == kol & sisse_valja == true) { kollane.Text = "Sisse valgusfoor"; }
+            else if (fr == roh & sisse_valja == true) { roheline.Text = "Sisse valgusfoor"; }
         }
 
         private void Valja_Clicked(object sender, EventArgs e)
