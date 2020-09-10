@@ -10,7 +10,7 @@ namespace DemihhovskiNewApp
         {
             InitializeComponent();
 
-            MainPage = new Valgisfoor2();
+            MainPage = new SliderStepper();
         }
 
         protected override void OnStart()
